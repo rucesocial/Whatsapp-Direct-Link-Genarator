@@ -27,7 +27,7 @@ var urlx=`https://8pz.blogspot.com/?no=${username.val()}&text=${token.val()}`;
   switch (site) {
     case 'bitly':
       return $.ajax({
-        url: `https://api-ssl.bitly.com/v3/shorten?format=txt&login=${"teknolojininkutusu"}&access_token=${"a968ad107823bdf91f58a55203d80aca6fdaadf4"}&longUrl=${encodeURIComponent(urlx)}`,
+        url: `https://api-ssl.bitly.com/v3/shorten?format=txt&login=${"your_bitly_username"}&access_token=${"your_access_token"}&longUrl=${encodeURIComponent(urlx)}`,
         async: false,
         dataType: 'text',
       }).then(function (data) {
